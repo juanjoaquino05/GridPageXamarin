@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="LoginAndValidation.Views.HomePage"
+    xmlns:views="clr-namespace:LoginAndValidation.Views"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+    BarBackgroundColor="White"
+    NavigationPage.HasBackButton="False"
+    Title="Discovery">
+  <!--Pages can be added as references or inline-->
+    <TabbedPage.Children>
+        <NavigationPage Title="Home" IconImageSource="home">
+            <x:Arguments>
+                <views:DiscoveryPage NavigationPage.HasNavigationBar="False" />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Discovery" IconImageSource="placeholder">
+            <x:Arguments>
+                <views:DiscoveryPage NavigationPage.HasNavigationBar="False" />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Bookmark" IconImageSource="bookmark">
+            <x:Arguments>
+                <views:DiscoveryPage NavigationPage.HasNavigationBar="False" />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Top Foods" IconImageSource="trophy">
+            <x:Arguments>
+                <views:DiscoveryPage NavigationPage.HasNavigationBar="False" />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Profile" IconImageSource="user">
+            <x:Arguments>
+                <views:DiscoveryPage NavigationPage.HasNavigationBar="False" />
+            </x:Arguments>
+        </NavigationPage>
+    </TabbedPage.Children>
+</TabbedPage>
